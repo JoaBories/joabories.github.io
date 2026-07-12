@@ -1,9 +1,109 @@
+/* 
+onix : #141717
+iron grey : #454b4d
+pearl aqua : #7de3d2
+violet : #f77cf7
+snow : #fffbfe
+*/
+
 body {
-  background-color: rgb(19, 19, 19);
+  background-color: #141717;
+  font-family: "Cascadia Code", sans-serif;
 }
-h1 {
-  color: rgb(57, 255, 239);
+
+.topbar {
+  position: fixed;
+  top: 0; left: 30%; right: 30%;
+
+  height: 6%;
+  padding: 0 20px;
+  
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  
+  user-select: none;
+  overflow-y: hidden;
+  
+  z-index: 20;
+  background: #454b4d;
+  border-radius: 0 0 20px 20px;
 }
+
+.topbar-path {
+  flex-basis: 20%;
+  font-size: 22px;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.path-highlight { 
+  color: #fffbfe; 
+  font-family: "Titan One", sans-serif;
+}
+ 
+.topbar-tabs {
+  flex-basis: 60%;
+  align-self: center;
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  font-family: "Titan One", sans-serif;
+}
+
+.tab {
+  padding: 5px 0;
+  margin: 5px;
+  border-bottom: 2px solid transparent;
+  font-size: 22px;
+  text-decoration: none;
+  color: #7de3d2;
+}
+
+.tab:hover { 
+  color: #f77cf7; 
+}
+
+.tab.active {
+  border-bottom-color: #7de3d2;
+}
+
+.tab.active:hover{
+  border-bottom-color: #f77cf7;
+}
+
+.topbar-icons{
+  flex-basis: 20%;
+  display: flex;
+  gap: 10%;
+  justify-content: right;
+  align-content: stretch;
+}
+
+.topbar-link{
+  align-self: center;
+}
+
+.topbar-icon{
+  align-self: center;
+}
+
 p {
-  color: rgb(255, 255, 255);
+  color: #fffbfe;
+}
+
+/* 
+fonts : 
+*/
+.cascadia-code{
+  font-family: "Cascadia Code", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titan-one-regular {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

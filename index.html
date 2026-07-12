@@ -1,12 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
+        <title>Joa Bories</title>
+        <link rel="icon" type="image/x-icon" href="image/kili12px.png">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="My own portfolio">
+        <meta name="keywords" content="Programmer, Engine, Portfolio, c++">
+        <meta name="author" content="Joa Bories">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Titan+One&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="styles.css">
     </head>
+
 <body>
 
-<h1>Hi welcome to my portfolio</h1>
-<p>I am Joa Bories</p>
+        <div class="topbar">
+            <div class="topbar-path">
+                <span class="titan-one-regular, path-highlight">Joa Bories</span>
+            </div>
+            <div class="topbar-tabs">
+                <a class="titan-one-regular, tab active" href="index.html">Home</a>
+                <a class="titan-one-regular, tab" href="projects.html">Projects</a>
+            </div>
+            <div class="topbar-icons">
+                <a class="topbar-link" href="https://github.com/JoaBories" target ="_blank"><img class="topbar-icon" src="image/github-white-icon.png" width="35" height="35"></a>
+                <a class="topbar-link" href="https://www.linkedin.com/in/joa-bories/" target ="_blank"><img class="topbar-icon" src="image/linkedin-white-icon.png" width="35" height="35"></a>
+            </div>
+        </div>
+
+        
+        <section id="hero" class="hero">
+        <div class="gutter" aria-hidden="true">
+        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+        </div>
+        <div class="hero-content">
+        <p class="prompt"><span class="prompt-sign">$</span> whoami</p>
+        <h1>Alex Carter</h1>
+        <p class="role">Full-stack developer — building fast, reliable web products from database to browser.</p>
+        <ul class="diff-tags" aria-label="Core skills">
+            <li><span class="plus">+</span>React</li>
+            <li><span class="plus">+</span>Node.js</li>
+            <li><span class="plus">+</span>TypeScript</li>
+            <li><span class="plus">+</span>PostgreSQL</li>
+            <li><span class="plus">+</span>AWS</li>
+        </ul>
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        </div>
+    </section>
+    
+    <!-- ABOUT -->
+    <section id="about" class="file-section">
+        <header class="file-header">
+        <span class="file-icon" aria-hidden="true">◆</span>
+        <span class="file-name">about.md</span>
+        <span class="file-meta dim">4 lines</span>
+        </header>
+        <div class="file-body prose">
+        <p>I'm a developer who likes shipping things that work — clean APIs, fast interfaces, and infrastructure that doesn't page anyone at 3am. Most of my time lives at the intersection of frontend polish and backend correctness.</p>
+        <p>Over the past few years I've worked across small startups and larger teams, moving between product features, internal tooling, and the occasional late-night production fire. I care about readable code, honest estimates, and leaving things better than I found them.</p>
+        <p>Outside of work: mechanical keyboards, long-distance running, and an unreasonable number of half-finished side projects.</p>
+        </div>
+    </section>
+    
+    <!-- PROJECTS -->
+    <section id="projects" class="file-section">
+        <header class="file-header">
+        <span class="file-icon" aria-hidden="true">▸</span>
+        <span class="file-name">projects/</span>
+        <span class="file-meta dim">3 entries</span>
+        </header>
+    
+        <div class="commit-list">
+    
+        <article class="commit">
+            <div class="commit-meta">
+            <span class="hash">a3f9c12</span>
+            <span class="dim">2026-05-14</span>
+            </div>
+            <h3 class="commit-title">Routewise — delivery route optimizer</h3>
+            <p class="commit-desc">A web app that reorders multi-stop delivery routes using real traffic data, cutting average route time by 18% in pilot testing. Built for a small logistics team of 12 drivers.</p>
+            <ul class="tag-row">
+            <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Mapbox</li>
+            </ul>
+            <div class="commit-links">
+            <a href="#">Live demo →</a>
+            <a href="#">Source →</a>
+            </div>
+        </article>
+    
+        <article class="commit">
+            <div class="commit-meta">
+            <span class="hash">7e21db4</span>
+            <span class="dim">2026-01-30</span>
+            </div>
+            <h3 class="commit-title">Ledgerly — shared expense tracker</h3>
+            <p class="commit-desc">Split expenses and settle up with roommates or travel groups, with automatic currency conversion and a running settle-up balance. ~1,400 monthly active users.</p>
+            <ul class="tag-row">
+            <li>Next.js</li><li>TypeScript</li><li>Stripe</li><li>Supabase</li>
+            </ul>
+            <div class="commit-links">
+            <a href="#">Live demo →</a>
+            <a href="#">Source →</a>
+            </div>
+        </article>
+    
+        <article class="commit">
+            <div class="commit-meta">
+            <span class="hash">f10a8c2</span>
+            <span class="dim">2025-09-02</span>
+            </div>
+            <h3 class="commit-title">Statuscheck — uptime monitor</h3>
+            <p class="commit-desc">Lightweight uptime and latency monitor with Slack alerting, built as a side project after one too many silent outages. Self-hostable in a single Docker container.</p>
+            <ul class="tag-row">
+            <li>Go</li><li>SQLite</li><li>Docker</li>
+            </ul>
+            <div class="commit-links">
+            <a href="#">Live demo →</a>
+            <a href="#">Source →</a>
+            </div>
+        </article>
+    
+        </div>
+    </section>
+    
+    <!-- EXPERIENCE -->
+    <section id="experience" class="file-section">
+        <header class="file-header">
+        <span class="file-icon" aria-hidden="true">≡</span>
+        <span class="file-name">experience.log</span>
+        <span class="file-meta dim">3 entries</span>
+        </header>
+    
+        <div class="log-list">
+    
+        <article class="log-entry">
+            <p class="log-line"><span class="log-key">commit</span> <span class="hash">9b21e4a</span></p>
+            <p class="log-line"><span class="log-key">role</span>    Senior Software Engineer @ Northbeam Labs</p>
+            <p class="log-line"><span class="log-key">date</span>    2024 — Present</p>
+            <div class="log-body">
+            <p>Leading development of the customer-facing dashboard used by 40+ enterprise clients. Reduced page load time by 40% through query optimization and code splitting.</p>
+            <p>Mentoring two junior engineers; introduced a design system now used across three product teams.</p>
+            </div>
+        </article>
+    
+        <article class="log-entry">
+            <p class="log-line"><span class="log-key">commit</span> <span class="hash">4d18f7c</span></p>
+            <p class="log-line"><span class="log-key">role</span>    Software Engineer @ Fieldnote</p>
+            <p class="log-line"><span class="log-key">date</span>    2021 — 2024</p>
+            <div class="log-body">
+            <p>Built and maintained the core API serving the mobile and web clients. Migrated legacy monolith endpoints to a service-based architecture with zero downtime.</p>
+            </div>
+        </article>
+    
+        <article class="log-entry">
+            <p class="log-line"><span class="log-key">commit</span> <span class="hash">1a02b91</span></p>
+            <p class="log-line"><span class="log-key">role</span>    Junior Developer @ Studio Pine</p>
+            <p class="log-line"><span class="log-key">date</span>    2019 — 2021</p>
+            <div class="log-body">
+            <p>Shipped client marketing sites and internal tools. First production bug fixed in week one; still slightly proud of it.</p>
+            </div>
+        </article>
+    
+        </div>
+    </section>
+    
+    <!-- CONTACT -->
+    <section id="contact" class="file-section">
+        <header class="file-header">
+        <span class="file-icon" aria-hidden="true">▸</span>
+        <span class="file-name">contact.sh</span>
+        <span class="file-meta dim">executable</span>
+        </header>
+        <div class="terminal-body">
+        <p class="term-line"><span class="prompt-sign">$</span> echo $EMAIL</p>
+        <p class="term-output"><a href="mailto:hello@alexcarter.dev">hello@alexcarter.dev</a></p>
+    
+        <p class="term-line"><span class="prompt-sign">$</span> open --github</p>
+        <p class="term-output"><a href="https://github.com/" target="_blank" rel="noopener">github.com/alexcarter</a></p>
+    
+        <p class="term-line"><span class="prompt-sign">$</span> open --linkedin</p>
+        <p class="term-output"><a href="https://linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/alexcarter</a></p>
+    
+        <p class="term-line"><span class="prompt-sign">$</span> <span class="cursor-blink" aria-hidden="true">_</span></p>
+        </div>
+    </section>
+    
+    </main>
+    
+    <!-- Bottom status bar -->
+    <footer class="statusbar">
+    <div class="status-left">
+        <span class="branch">⎇ main</span>
+        <span class="status-sep">·</span>
+        <span id="status-section">whoami</span>
+    </div>
+    <div class="status-right">
+        <span>UTF-8</span>
+        <span class="status-sep">·</span>
+        <span>LF</span>
+        <span class="status-sep">·</span>
+        <span id="status-clock">00:00:00</span>
+    </div>
+    </footer>
 
 </body>
 </html>
