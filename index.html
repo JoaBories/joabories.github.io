@@ -1,215 +1,115 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title>Joa Bories</title>
-        <link rel="icon" type="image/x-icon" href="image/kili12px.png">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Joa Bories</title>
+  <meta name="description" content="About me :">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Oswald:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+  <header id="top">
+    <div class="bar">
+      <a class="brand" href="index.html"><img src="images/logo.png" alt="">Joa Bories</a>
+      <nav aria-label="Main">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="projects.html">Projects</a>
+        <a href="https://github.com/JoaBories">My Github</a>
+        <a href="https://www.linkedin.com/in/joa-bories/">My Linkedin</a>
+      </nav>
+    </div>
+  </header>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="My own portfolio">
-        <meta name="keywords" content="Programmer, Engine, Portfolio, c++">
-        <meta name="author" content="Joa Bories">
+  <div class="hero">
+    <h1>Joa Bories</h1>
+    <a class="down" href="#about" aria-label="Scroll down"><svg viewBox="0 0 24 24"><path d="M4 8l8 8 8-8"/></svg></a>
+  </div>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Titan+One&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="styles.css">
-    </head>
-
-<body>
-
-        <div class="topbar">
-            <div class="topbar-path">
-                <span class="titan-one-regular, path-highlight">Joa Bories</span>
-            </div>
-            <div class="topbar-tabs">
-                <a class="titan-one-regular, tab active" href="index.html">Home</a>
-                <a class="titan-one-regular, tab" href="projects.html">Projects</a>
-            </div>
-            <div class="topbar-icons">
-                <a class="topbar-link" href="https://github.com/JoaBories" target ="_blank"><img class="topbar-icon" src="image/github-white-icon.png" width="35" height="35"></a>
-                <a class="topbar-link" href="https://www.linkedin.com/in/joa-bories/" target ="_blank"><img class="topbar-icon" src="image/linkedin-white-icon.png" width="35" height="35"></a>
-            </div>
-        </div>
-
-        
-        <section id="hero" class="hero">
-        <div class="gutter" aria-hidden="true">
-        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
-        </div>
-        <div class="hero-content">
-        <p class="prompt"><span class="prompt-sign">$</span> whoami</p>
-        <h1>Alex Carter</h1>
-        <p class="role">Full-stack developer — building fast, reliable web products from database to browser.</p>
-        <ul class="diff-tags" aria-label="Core skills">
-            <li><span class="plus">+</span>React</li>
-            <li><span class="plus">+</span>Node.js</li>
-            <li><span class="plus">+</span>TypeScript</li>
-            <li><span class="plus">+</span>PostgreSQL</li>
-            <li><span class="plus">+</span>AWS</li>
+  <section id="about">
+    <div class="band"><h2>About me :</h2></div>
+    <div class="about">
+      <p>Hi, I’m Joa Bories a game programmer currently studying at Artfx Montpellier. I love all aspects of game programming, from gameplay to UI but I'm mostly interested in Engine programming.</p>
+      <div>
+        <h3>Skills :</h3>
+        <ul>
+          <li>Unreal Engine</li>
+          <li>Blueprint</li>
+          <li>C++</li>
+          <li>OpenGl</li>
         </ul>
-        <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View projects</a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
-        </div>
-        </div>
-    </section>
-    
-    <!-- ABOUT -->
-    <section id="about" class="file-section">
-        <header class="file-header">
-        <span class="file-icon" aria-hidden="true">◆</span>
-        <span class="file-name">about.md</span>
-        <span class="file-meta dim">4 lines</span>
-        </header>
-        <div class="file-body prose">
-        <p>I'm a developer who likes shipping things that work — clean APIs, fast interfaces, and infrastructure that doesn't page anyone at 3am. Most of my time lives at the intersection of frontend polish and backend correctness.</p>
-        <p>Over the past few years I've worked across small startups and larger teams, moving between product features, internal tooling, and the occasional late-night production fire. I care about readable code, honest estimates, and leaving things better than I found them.</p>
-        <p>Outside of work: mechanical keyboards, long-distance running, and an unreasonable number of half-finished side projects.</p>
-        </div>
-    </section>
-    
-    <!-- PROJECTS -->
-    <section id="projects" class="file-section">
-        <header class="file-header">
-        <span class="file-icon" aria-hidden="true">▸</span>
-        <span class="file-name">projects/</span>
-        <span class="file-meta dim">3 entries</span>
-        </header>
-    
-        <div class="commit-list">
-    
-        <article class="commit">
-            <div class="commit-meta">
-            <span class="hash">a3f9c12</span>
-            <span class="dim">2026-05-14</span>
-            </div>
-            <h3 class="commit-title">Routewise — delivery route optimizer</h3>
-            <p class="commit-desc">A web app that reorders multi-stop delivery routes using real traffic data, cutting average route time by 18% in pilot testing. Built for a small logistics team of 12 drivers.</p>
-            <ul class="tag-row">
-            <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Mapbox</li>
-            </ul>
-            <div class="commit-links">
-            <a href="#">Live demo →</a>
-            <a href="#">Source →</a>
-            </div>
-        </article>
-    
-        <article class="commit">
-            <div class="commit-meta">
-            <span class="hash">7e21db4</span>
-            <span class="dim">2026-01-30</span>
-            </div>
-            <h3 class="commit-title">Ledgerly — shared expense tracker</h3>
-            <p class="commit-desc">Split expenses and settle up with roommates or travel groups, with automatic currency conversion and a running settle-up balance. ~1,400 monthly active users.</p>
-            <ul class="tag-row">
-            <li>Next.js</li><li>TypeScript</li><li>Stripe</li><li>Supabase</li>
-            </ul>
-            <div class="commit-links">
-            <a href="#">Live demo →</a>
-            <a href="#">Source →</a>
-            </div>
-        </article>
-    
-        <article class="commit">
-            <div class="commit-meta">
-            <span class="hash">f10a8c2</span>
-            <span class="dim">2025-09-02</span>
-            </div>
-            <h3 class="commit-title">Statuscheck — uptime monitor</h3>
-            <p class="commit-desc">Lightweight uptime and latency monitor with Slack alerting, built as a side project after one too many silent outages. Self-hostable in a single Docker container.</p>
-            <ul class="tag-row">
-            <li>Go</li><li>SQLite</li><li>Docker</li>
-            </ul>
-            <div class="commit-links">
-            <a href="#">Live demo →</a>
-            <a href="#">Source →</a>
-            </div>
-        </article>
-    
-        </div>
-    </section>
-    
-    <!-- EXPERIENCE -->
-    <section id="experience" class="file-section">
-        <header class="file-header">
-        <span class="file-icon" aria-hidden="true">≡</span>
-        <span class="file-name">experience.log</span>
-        <span class="file-meta dim">3 entries</span>
-        </header>
-    
-        <div class="log-list">
-    
-        <article class="log-entry">
-            <p class="log-line"><span class="log-key">commit</span> <span class="hash">9b21e4a</span></p>
-            <p class="log-line"><span class="log-key">role</span>    Senior Software Engineer @ Northbeam Labs</p>
-            <p class="log-line"><span class="log-key">date</span>    2024 — Present</p>
-            <div class="log-body">
-            <p>Leading development of the customer-facing dashboard used by 40+ enterprise clients. Reduced page load time by 40% through query optimization and code splitting.</p>
-            <p>Mentoring two junior engineers; introduced a design system now used across three product teams.</p>
-            </div>
-        </article>
-    
-        <article class="log-entry">
-            <p class="log-line"><span class="log-key">commit</span> <span class="hash">4d18f7c</span></p>
-            <p class="log-line"><span class="log-key">role</span>    Software Engineer @ Fieldnote</p>
-            <p class="log-line"><span class="log-key">date</span>    2021 — 2024</p>
-            <div class="log-body">
-            <p>Built and maintained the core API serving the mobile and web clients. Migrated legacy monolith endpoints to a service-based architecture with zero downtime.</p>
-            </div>
-        </article>
-    
-        <article class="log-entry">
-            <p class="log-line"><span class="log-key">commit</span> <span class="hash">1a02b91</span></p>
-            <p class="log-line"><span class="log-key">role</span>    Junior Developer @ Studio Pine</p>
-            <p class="log-line"><span class="log-key">date</span>    2019 — 2021</p>
-            <div class="log-body">
-            <p>Shipped client marketing sites and internal tools. First production bug fixed in week one; still slightly proud of it.</p>
-            </div>
-        </article>
-    
-        </div>
-    </section>
-    
-    <!-- CONTACT -->
-    <section id="contact" class="file-section">
-        <header class="file-header">
-        <span class="file-icon" aria-hidden="true">▸</span>
-        <span class="file-name">contact.sh</span>
-        <span class="file-meta dim">executable</span>
-        </header>
-        <div class="terminal-body">
-        <p class="term-line"><span class="prompt-sign">$</span> echo $EMAIL</p>
-        <p class="term-output"><a href="mailto:hello@alexcarter.dev">hello@alexcarter.dev</a></p>
-    
-        <p class="term-line"><span class="prompt-sign">$</span> open --github</p>
-        <p class="term-output"><a href="https://github.com/" target="_blank" rel="noopener">github.com/alexcarter</a></p>
-    
-        <p class="term-line"><span class="prompt-sign">$</span> open --linkedin</p>
-        <p class="term-output"><a href="https://linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/alexcarter</a></p>
-    
-        <p class="term-line"><span class="prompt-sign">$</span> <span class="cursor-blink" aria-hidden="true">_</span></p>
-        </div>
-    </section>
-    
-    </main>
-    
-    <!-- Bottom status bar -->
-    <footer class="statusbar">
-    <div class="status-left">
-        <span class="branch">⎇ main</span>
-        <span class="status-sep">·</span>
-        <span id="status-section">whoami</span>
+      </div>
+      <div class="links">
+        <h3>Links :</h3>
+        <ul>
+          <li><a href="https://github.com/JoaBories">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/joa-bories/">Linkedin</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="status-right">
-        <span>UTF-8</span>
-        <span class="status-sep">·</span>
-        <span>LF</span>
-        <span class="status-sep">·</span>
-        <span id="status-clock">00:00:00</span>
-    </div>
-    </footer>
+  </section>
 
+  <section class="demo">
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/v1vnv8RvpYE?si=BWVPyB-RM52KLmMx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+      <h2>My latest Demoreel</h2>
+      <p>Here is my demoreel for 2026, covering my major projects from year 3 of game programming at Artfx.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="band"><h2>My projects</h2></div>
+    <div class="sub">
+      <h3>Here’s a small selection of what I’ve been working on.</h3>
+      <a class="btn" href="projects.html">See more projects</a>
+      <span></span>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <a href="https://marin1234.itch.io/into-the-fishknown"><img src="images/Showcase1.png" alt="Into the Fishknown"></a>
+        <h3>Into the Fishknown</h3>
+        <p class="tech">Unreal Engine</p>
+        <p class="desc">A game jam project made during 1 week-end for the Global Game Jam 2026.</p>
+      </article>
+      <article class="card">
+        <a href="https://github.com/JoaBories/KiliEngine2"><img src="images/Showcase2.png" alt="KiliEngine"></a>
+        <h3><a href="https://github.com/JoaBories/KiliEngine2">KiliEngine</a></h3>
+        <p class="tech">C++ / OpenGl</p>
+        <p class="desc">My game engine used to experiment and learn about engine architecture and graphic rendering.</p>
+      </article>
+      <article class="card">
+        <a href="https://artfx-school.itch.io/space-harriet"><img src="images/Showcase3.png" alt="Space Harriet"></a>
+        <h3><a href="https://artfx-school.itch.io/space-harriet">Space Harriet</a></h3>
+        <p class="tech">Unreal Engine</p>
+        <p class="desc">A group project made during 1 month, the goal was to remake the old Space Harrier in 3D.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <p><strong>Joa Bories</strong></p>
+      <p>You can contact me by mail: <a href="mailto:joa.bories@artfx.fr">joa.bories@artfx.fr</a> or on Linkedin: <a href="https://www.linkedin.com/in/joa-bories/">linkedin.com/in/joa-bories</a>.<br>
+      You can also see my Github: <a href="https://github.com/JoaBories">github.com/JoaBories</a>.</p>
+    </div>
+  </footer>
+
+  <script>
+    var h = document.getElementById("top");
+    var hero = document.querySelector(".hero");
+    function onScroll() {
+      var y = window.scrollY;
+      h.classList.toggle("solid", y > 40);
+      if (y < window.innerHeight) hero.style.setProperty("--p", (y * 0.5) + "px");
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  </script>
 </body>
 </html>
