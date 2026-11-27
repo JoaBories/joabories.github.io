@@ -8,7 +8,7 @@
   --line: #3b454c;
   --accent: #3ddc2b;
   --head: "Oswald", "Arial Narrow", Impact, sans-serif;
-  --body: "Fira Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --body: "Cascadia Mono", "Fira Mono", ui-monospace, Consolas, monospace;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
