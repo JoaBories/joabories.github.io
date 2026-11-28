@@ -7,6 +7,7 @@
   --muted: #c3cbd0;
   --line: #3b454c;
   --accent: #3ddc2b;
+  --highlight: #3ddc2b54;
   --font-heading: "Oswald", "Arial Narrow", Impact, sans-serif;
   --font-body: "Cascadia Mono", "Fira Mono", ui-monospace, Consolas, monospace;
   --header-height: 56px;
@@ -27,6 +28,10 @@ body {
   background: var(--bg);
   color: var(--text);
   font: 15px/1.6 var(--font-body);
+}
+
+::selection {
+  background-color: var(--highlight);
 }
 
 a {
@@ -133,13 +138,19 @@ nav a[aria-current="page"] {
   overflow: hidden;
 }
 
-.hero::before {
-  content: "";
+.hero-video {
   position: absolute;
   inset: 0;
-  background: url("images/Background.jpg") center bottom / cover no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
   transform: translateY(var(--parallax, 0px));
   will-change: transform;
+}
+
+.hero-small .hero-video {
+  object-position: center 55%;
 }
 
 .hero h1 {
@@ -158,10 +169,6 @@ nav a[aria-current="page"] {
   align-items: center;
   justify-items: center;
   padding-top: var(--header-height);
-}
-
-.hero-small::before {
-  background-position: center 55%;
 }
 
 .hero-small h1 {
