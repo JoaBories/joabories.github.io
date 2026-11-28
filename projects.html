@@ -5,47 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <title>Joa Bories | Projects</title>
-  <meta name="description" content="Joa Bories Projects">
+  <meta name="description" content="Projects by Joa Bories, game programmer: KiliEngine II, Space Harriet and Into the Fishknown.">
   <link rel="icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Oswald:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body class="home">
+<body class="overlay-header">
+
   <header>
-    <div class="bar">
+    <div class="header-bar">
       <a class="brand" href="index.html"><img src="images/logo.png" alt="">Joa Bories</a>
       <nav aria-label="Main">
         <a href="index.html">Main</a>
         <a href="projects.html" aria-current="page">Projects</a>
-        <a href="https://github.com/JoaBories">Github</a>
-        <a href="https://www.linkedin.com/in/joa-bories/">Linkedin</a>
+        <a href="https://github.com/JoaBories">GitHub</a>
+        <a href="https://www.linkedin.com/in/joa-bories/">LinkedIn</a>
       </nav>
     </div>
   </header>
 
-  <div class="hero small"><h1>Projects</h1></div>
+  <div class="hero hero-small">
+    <video class="hero-video" autoplay muted loop playsinline poster="images/Background.jpg" aria-hidden="true">
+      <source src="videos/background.mp4" type="video/mp4">
+    </video>
+    <h1>Projects</h1>
+  </div>
 
   <main class="projects">
     <article class="project" id="kili-engine-ii">
       <div>
-        <h2>Kili Engine II</h2>
-        <div class="btns"><a class="btn" href="https://github.com/JoaBories/KiliEngine2"><span class="ico"><img class="w" src="images/logos/GitHub_Invertocat_White.png" alt=""><img class="b" src="images/logos/GitHub_Invertocat_Black.png" alt=""></span>Github-Link</a></div>
-        <dl>
+        <h2>KiliEngine II</h2>
+        <div class="button-row">
+          <a class="btn" href="https://github.com/JoaBories/KiliEngine2">
+            <span class="icon">
+              <img class="icon-white" src="images/logos/GitHub_Invertocat_White.png" alt="">
+              <img class="icon-black" src="images/logos/GitHub_Invertocat_Black.png" alt="">
+            </span>GitHub link
+          </a>
+        </div>
+        <dl class="project-info">
           <dt>Team</dt><dd>Solo project</dd>
-          <dt>Time</dt><dd>From June 15th 2026 - Now</dd>
-          <dt>Technologies</dt><dd>C++ / OpenGl</dd>
+          <dt>Time</dt><dd>Since June 15th, 2026 (ongoing)</dd>
+          <dt>Technologies</dt><dd><ul class="chips"><li>C++</li><li>OpenGL</li></ul></dd>
         </dl>
-        <p>KiliEngine is a 3D engine I’m building in C++ to learn engine architecture and graphics rendering. The <a href="https://github.com/JoaBories/KiliEngine">first version</a> implemented sphere and box collisions, mesh, texture, basic physics and raycast.</p>
-        <p>I used it to make two small games: a bowling game to test physics and collisions, and a Doom-like to try more gameplay. I’m now rebuilding it as <a href="https://github.com/JoaBories/KiliEngine2">KiliEngine II</a>, on cleaner foundations. Better architecture, Renderer abstraction, Config files, Premake solution generation and more.</p>
+        <p>KiliEngine is a 3D engine I’m building in C++ to learn engine architecture and graphics rendering. The <a href="https://github.com/JoaBories/KiliEngine">first version</a> implemented sphere and box collisions, meshes, textures, basic physics and raycasting.</p>
+        <p>I used it to make two small games: a bowling game to test physics and collisions, and a Doom-like to try more gameplay. I’m now rebuilding it as <a href="https://github.com/JoaBories/KiliEngine2">KiliEngine II</a>, on cleaner foundations: better architecture, renderer abstraction, config files, Premake solution generation and more.</p>
       </div>
-      <div class="gallery square" data-gallery>
-        <img class="main" src="images/KiliE2/KiliE2_1.jpg" alt="Kili Engine screenshot 1">
-        <div class="thumbs">
-          <button type="button" aria-current="true"><img src="images/KiliE2/KiliE2_1.jpg" alt="Screenshot 1"></button>
-          <button type="button"><img src="images/KiliE2/KiliE2_2.jpg" alt="Screenshot 2"></button>
-          <button type="button"><img src="images/KiliE2/KiliE2_3.jpg" alt="Screenshot 3"></button>
+      <div class="gallery gallery-square" data-gallery>
+        <img class="gallery-main" src="images/KiliE2/KiliE2_1.jpg" alt="KiliEngine II screenshot 1">
+        <div class="gallery-thumbs">
+          <button type="button" aria-current="true"><img src="images/KiliE2/KiliE2_1.jpg" alt="KiliEngine II screenshot 1"></button>
+          <button type="button"><img src="images/KiliE2/KiliE2_2.jpg" alt="KiliEngine II screenshot 2"></button>
+          <button type="button"><img src="images/KiliE2/KiliE2_3.jpg" alt="KiliEngine II screenshot 3"></button>
         </div>
       </div>
     </article>
@@ -53,49 +67,69 @@
     <article class="project" id="space-harriet">
       <div>
         <h2>Space Harriet</h2>
-        <div class="btns">
-          <a class="btn" href="https://artfx-school.itch.io/space-harriet"><span class="ico"><img class="w" src="images/logos/itchio-logo-textless-white.png" alt=""><img class="b" src="images/logos/itchio-logo-textless-black.png" alt=""></span>Itchi.io-Link</a>
-          <a class="btn" href="https://github.com/Alexandre-Coppens/REMAKE_Harrier"><span class="ico"><img class="w" src="images/logos/GitHub_Invertocat_White.png" alt=""><img class="b" src="images/logos/GitHub_Invertocat_Black.png" alt=""></span>Github-Link</a>
+        <div class="button-row">
+          <a class="btn" href="https://artfx-school.itch.io/space-harriet">
+            <span class="icon">
+              <img class="icon-white" src="images/logos/itchio-logo-textless-white.png" alt="">
+              <img class="icon-black" src="images/logos/itchio-logo-textless-black.png" alt="">
+            </span>itch.io link
+          </a>
+          <a class="btn" href="https://github.com/Alexandre-Coppens/REMAKE_Harrier">
+            <span class="icon">
+              <img class="icon-white" src="images/logos/GitHub_Invertocat_White.png" alt="">
+              <img class="icon-black" src="images/logos/GitHub_Invertocat_Black.png" alt="">
+            </span>GitHub link
+          </a>
         </div>
-        <dl>
+        <dl class="project-info">
           <dt>Team</dt><dd>Team project, 21 people</dd>
-          <dt>Time</dt><dd>1 Month, From November 10th, 2025 to December 19th, 2025</dd>
-          <dt>Technologies</dt><dd>Unreal Engine 5 / Blueprint</dd>
+          <dt>Time</dt><dd>1 month, from November 10th to December 19th, 2025</dd>
+          <dt>Technologies</dt><dd><ul class="chips"><li>Unreal Engine 5</li><li>Blueprint</li></ul></dd>
         </dl>
-        <p><a href="https://artfx-school.itch.io/space-harriet">Space Harriet</a> is a 3D remake of the original arcade game Space Harrier. The goal was to rethink and adapt it to 3D. In this rail-shooter, use her jet-propelled laser canon to eradicate all your enemies. In this project i worked on the programming of the 3C, player mechanics, HUD and menus.</p>
+        <p><a href="https://artfx-school.itch.io/space-harriet">Space Harriet</a> is a 3D remake of the original arcade game Space Harrier. The goal was to rethink and adapt it to 3D. In this rail-shooter, use her jet-propelled laser cannon to eradicate all your enemies. In this project, I worked on the programming of the 3C, player mechanics, HUD and menus.</p>
       </div>
       <div class="gallery" data-gallery>
-        <img class="main" src="images/SpaceH/SpaceH_1.jpg" alt="Space Harriet screenshot 1">
-        <div class="thumbs">
-          <button type="button" aria-current="true"><img src="images/SpaceH/SpaceH_1.jpg" alt="Screenshot 1"></button>
-          <button type="button"><img src="images/SpaceH/SpaceH_2.jpg" alt="Screenshot 2"></button>
-          <button type="button"><img src="images/SpaceH/SpaceH_3.jpg" alt="Screenshot 3"></button>
-          <button type="button"><img src="images/SpaceH/SpaceH_4.jpg" alt="Screenshot 4"></button>
-          <button type="button"><img src="images/SpaceH/SpaceH_5.jpg" alt="Screenshot 5"></button>
+        <img class="gallery-main" src="images/SpaceH/SpaceH_1.jpg" alt="Space Harriet screenshot 1">
+        <div class="gallery-thumbs">
+          <button type="button" aria-current="true"><img src="images/SpaceH/SpaceH_1.jpg" alt="Space Harriet screenshot 1"></button>
+          <button type="button"><img src="images/SpaceH/SpaceH_2.jpg" alt="Space Harriet screenshot 2"></button>
+          <button type="button"><img src="images/SpaceH/SpaceH_3.jpg" alt="Space Harriet screenshot 3"></button>
+          <button type="button"><img src="images/SpaceH/SpaceH_4.jpg" alt="Space Harriet screenshot 4"></button>
+          <button type="button"><img src="images/SpaceH/SpaceH_5.jpg" alt="Space Harriet screenshot 5"></button>
         </div>
       </div>
     </article>
 
     <article class="project" id="into-the-fishknown">
       <div>
-        <h2>Into The Fishknown</h2>
-        <div class="btns">
-          <a class="btn" href="https://marin1234.itch.io/into-the-fishknown"><span class="ico"><img class="w" src="images/logos/itchio-logo-textless-white.png" alt=""><img class="b" src="images/logos/itchio-logo-textless-black.png" alt=""></span>Itchi.io-Link</a>
-          <a class="btn" href="https://github.com/JoaBories/GlobalGameJam2026"><span class="ico"><img class="w" src="images/logos/GitHub_Invertocat_White.png" alt=""><img class="b" src="images/logos/GitHub_Invertocat_Black.png" alt=""></span>Github-Link</a>
+        <h2>Into the Fishknown</h2>
+        <div class="button-row">
+          <a class="btn" href="https://marin1234.itch.io/into-the-fishknown">
+            <span class="icon">
+              <img class="icon-white" src="images/logos/itchio-logo-textless-white.png" alt="">
+              <img class="icon-black" src="images/logos/itchio-logo-textless-black.png" alt="">
+            </span>itch.io link
+          </a>
+          <a class="btn" href="https://github.com/JoaBories/GlobalGameJam2026">
+            <span class="icon">
+              <img class="icon-white" src="images/logos/GitHub_Invertocat_White.png" alt="">
+              <img class="icon-black" src="images/logos/GitHub_Invertocat_Black.png" alt="">
+            </span>GitHub link
+          </a>
         </div>
-        <dl>
+        <dl class="project-info">
           <dt>Team</dt><dd>Team project, 8 people</dd>
-          <dt>Time</dt><dd>1 Month, From January 30th, 2026 to February 1st, 2026</dd>
-          <dt>Technologies</dt><dd>Unreal Engine 5 / Blueprint</dd>
+          <dt>Time</dt><dd>1 weekend, from January 30th to February 1st, 2026</dd>
+          <dt>Technologies</dt><dd><ul class="chips"><li>Unreal Engine 5</li><li>Blueprint</li></ul></dd>
         </dl>
-        <p><a href="https://marin1234.itch.io/into-the-fishknown">Into The Fishknown</a> is a small game made for the Global Game Jam 2026. Become a marine biologist and study the weird fish around the radioactive waste area. Upgrade your diving mask with the help of L'Hareng the shopkeeper by fulfilling his requests and collect specific fish. For this project i was the only programmer so i did the whole programming.</p>
+        <p><a href="https://marin1234.itch.io/into-the-fishknown">Into the Fishknown</a> is a small game made for the Global Game Jam 2026. Become a marine biologist and study the weird fish around the radioactive waste area. Upgrade your diving mask with the help of L’Hareng the shopkeeper by fulfilling his requests and collecting specific fish. For this project, I was the only programmer, so I did all the programming.</p>
       </div>
       <div class="gallery" data-gallery>
-        <img class="main" src="images/GGJ26/GGJ26_1.jpg" alt="Into The Fishknown screenshot 1">
-        <div class="thumbs">
-          <button type="button" aria-current="true"><img src="images/GGJ26/GGJ26_1.jpg" alt="Screenshot 1"></button>
-          <button type="button"><img src="images/GGJ26/GGJ26_2.jpg" alt="Screenshot 2"></button>
-          <button type="button"><img src="images/GGJ26/GGJ26_3.jpg" alt="Screenshot 3"></button>
+        <img class="gallery-main" src="images/GGJ26/GGJ26_1.jpg" alt="Into the Fishknown screenshot 1">
+        <div class="gallery-thumbs">
+          <button type="button" aria-current="true"><img src="images/GGJ26/GGJ26_1.jpg" alt="Into the Fishknown screenshot 1"></button>
+          <button type="button"><img src="images/GGJ26/GGJ26_2.jpg" alt="Into the Fishknown screenshot 2"></button>
+          <button type="button"><img src="images/GGJ26/GGJ26_3.jpg" alt="Into the Fishknown screenshot 3"></button>
         </div>
       </div>
     </article>
@@ -104,33 +138,12 @@
   <footer>
     <div>
       <p><strong>Joa Bories</strong></p>
-      <p>You can contact me by mail: <a href="mailto:joa.bories@artfx.fr">joa.bories@artfx.fr</a> or on Linkedin: <a href="https://www.linkedin.com/in/joa-bories/">linkedin.com/in/joa-bories</a>.<br>
-      You can also see my Github: <a href="https://github.com/JoaBories">github.com/JoaBories</a>.</p>
+      <p>
+        You can contact me by email: <a href="mailto:joa.bories@artfx.fr">joa.bories@artfx.fr</a> or on LinkedIn: <a href="https://www.linkedin.com/in/joa-bories/">linkedin.com/in/joa-bories</a>.<br>
+        You can also check out my GitHub: <a href="https://github.com/JoaBories">github.com/JoaBories</a>.
+      </p>
     </div>
   </footer>
 
-  <script>
-    document.querySelectorAll("[data-gallery]").forEach(function (g) {
-      var main = g.querySelector(".main");
-      g.querySelectorAll(".thumbs button").forEach(function (b) {
-        b.addEventListener("click", function () {
-          main.src = b.querySelector("img").src;
-          g.querySelectorAll(".thumbs button").forEach(function (o) { o.removeAttribute("aria-current"); });
-          b.setAttribute("aria-current", "true");
-        });
-      });
-    });
-  </script>
-<script>
-    var h = document.querySelector("header");
-    var hero = document.querySelector(".hero");
-    function onScroll() {
-      var y = window.scrollY;
-      h.classList.toggle("solid", y > 40);
-      if (y < window.innerHeight) hero.style.setProperty("--p", (y * 0.5) + "px");
-    }
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-  </script>
 </body>
 </html>
