@@ -7,7 +7,6 @@
   --muted: #c3cbd0;
   --line: #3b454c;
   --accent: #3ddc2b;
-  --highlight: #3ddc2b54;
   --font-heading: "Oswald", "Arial Narrow", Impact, sans-serif;
   --font-body: "Cascadia Mono", "Fira Mono", ui-monospace, Consolas, monospace;
   --header-height: 56px;
@@ -28,10 +27,6 @@ body {
   background: var(--bg);
   color: var(--text);
   font: 15px/1.6 var(--font-body);
-}
-
-::selection {
-  background-color: var(--highlight);
 }
 
 a {
@@ -241,6 +236,27 @@ nav a[aria-current="page"] {
   opacity: 1;
 }
 
+/* Chips (skills and technologies) */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chips li {
+  padding: 3px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--band);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
 /* Home page: about */
 
 .section-band {
@@ -268,7 +284,7 @@ nav a[aria-current="page"] {
 .about h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  margin: 0 0 10px;
+  margin: 0;
 }
 
 .about ul {
@@ -277,18 +293,10 @@ nav a[aria-current="page"] {
   padding: 0;
 }
 
-.about li {
-  margin-bottom: 6px;
-}
-
-.about li::before {
-  content: "\25AA";
-  font-size: 0.8em;
-  margin-right: 8px;
-}
-
-.about .links li::before {
-  content: none;
+.about-side > div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .about-side > div + div {
@@ -300,10 +308,6 @@ nav a[aria-current="page"] {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px 24px;
-}
-
-.inline-list li {
-  margin: 0;
 }
 
 .inline-list .btn {
@@ -392,11 +396,9 @@ nav a[aria-current="page"] {
   color: var(--accent);
 }
 
-.card-tech {
-  font-family: var(--font-heading);
-  text-align: center;
-  font-size: 1.3rem;
-  margin: 0 0 18px;
+.card .chips {
+  justify-content: center;
+  margin: 4px 0 18px;
 }
 
 .card-desc {
@@ -452,6 +454,7 @@ nav a[aria-current="page"] {
 .project-info {
   display: grid;
   grid-template-columns: max-content 1fr;
+  align-items: baseline;
   gap: 4px 16px;
   margin: 0 0 18px;
 }
