@@ -4,116 +4,124 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <title>Joa Bories | Porfolio Game Programmer</title>
-  <meta name="description" content=" Hi, I’m Joa Bories a game programmer currently studying at Artfx Montpellier. 
-                                     I love all aspects of game programming but I'm mostly interested in Engine programming.
-                                     There is my porfolio website. ">
+  <title>Joa Bories | Game Programmer Portfolio</title>
+  <meta name="description" content="Hi, I’m Joa Bories, a game programmer currently studying at ArtFX Montpellier. I love all aspects of game programming, from gameplay to UI, but I’m mostly interested in engine programming. Here is my portfolio website.">
   <link rel="icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Oswald:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body class="home">
-  <header id="top">
-    <div class="bar">
+<body class="overlay-header">
+
+  <header>
+    <div class="header-bar">
       <a class="brand" href="index.html"><img src="images/logo.png" alt="">Joa Bories</a>
       <nav aria-label="Main">
         <a href="index.html" aria-current="page">Main</a>
         <a href="projects.html">Projects</a>
-        <a href="https://github.com/JoaBories">Github</a>
-        <a href="https://www.linkedin.com/in/joa-bories/">Linkedin</a>
+        <a href="https://github.com/JoaBories">GitHub</a>
+        <a href="https://www.linkedin.com/in/joa-bories/">LinkedIn</a>
       </nav>
     </div>
   </header>
 
   <div class="hero">
     <h1>Joa Bories</h1>
-    <a class="down" href="#about" aria-label="Scroll down"><svg viewBox="0 0 24 24"><path d="M4 8l8 8 8-8"/></svg></a>
+    <a class="scroll-down" href="#about" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24"><path d="M4 8l8 8 8-8"/></svg>
+    </a>
   </div>
 
-  <section id="about">
-    <div class="band"><h2>About me :</h2></div>
-    <div class="about">
-      <p>Hi, I’m Joa Bories a game programmer currently studying at Artfx Montpellier. I love all aspects of game programming, from gameplay to UI but I'm mostly interested in Engine programming.</p>
-      <div class="rows">
+  <main>
+    <section id="about">
+      <div class="section-band"><h2>About me :</h2></div>
+      <div class="about">
+        <p>Hi, I’m Joa Bories, a game programmer currently studying at ArtFX Montpellier. I love all aspects of game programming, from gameplay to UI, but I’m mostly interested in engine programming.</p>
+        <div class="about-side">
+          <div>
+            <h3>Skills :</h3>
+            <ul class="inline-list">
+              <li>Unreal Engine</li>
+              <li>Blueprint</li>
+              <li>C++</li>
+              <li>OpenGL</li>
+            </ul>
+          </div>
+          <div class="links">
+            <h3>Links :</h3>
+            <ul class="inline-list">
+              <li>
+                <a class="btn" href="https://github.com/JoaBories">
+                  <span class="icon">
+                    <img class="icon-white" src="images/logos/GitHub_Invertocat_White.png" alt="">
+                    <img class="icon-black" src="images/logos/GitHub_Invertocat_Black.png" alt="">
+                  </span>GitHub
+                </a>
+              </li>
+              <li>
+                <a class="btn" href="https://www.linkedin.com/in/joa-bories/">
+                  <span class="icon">
+                    <img class="icon-white" src="images/logos/InBug-White.png" alt="">
+                    <img class="icon-black" src="images/logos/InBug-Black.png" alt="">
+                  </span>LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demoreel">
+      <div class="demoreel-video">
+        <iframe src="https://www.youtube.com/embed/v1vnv8RvpYE" title="Demoreel 2026 | 3rd year of Game Programming at Artfx" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
       <div>
-        <h3>Skills :</h3>
-        <ul class="flat">
-          <li>Unreal Engine</li>
-          <li>Blueprint</li>
-          <li>C++</li>
-          <li>OpenGl</li>
-        </ul>
+        <h2>My latest Demoreel</h2>
+        <p>Here is my demoreel for 2026, covering my major projects from year 3 of game programming at Artfx.</p>
       </div>
-      <div class="links">
-        <h3>Links :</h3>
-        <ul class="flat">
-          <li><a class="btn" href="https://github.com/JoaBories"><span class="ico"><img class="w" src="images/logos/GitHub_Invertocat_White.png" alt=""><img class="b" src="images/logos/GitHub_Invertocat_Black.png" alt=""></span>Github</a></li>
-          <li><a class="btn" href="https://www.linkedin.com/in/joa-bories/"><span class="ico"><img class="w" src="images/logos/InBug-White.png" alt=""><img class="b" src="images/logos/InBug-Black.png" alt=""></span>Linkedin</a></li>
-        </ul>
-      </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="demo">
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/v1vnv8RvpYE" title="Demoreel 2026 | 3rd year of Game Programming at Artfx" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-    </div>
-    <div>
-      <h2>My latest Demoreel</h2>
-      <p>Here is my demoreel for 2026, covering my major projects from year 3 of game programming at Artfx.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="band"><h2>My projects</h2></div>
-    <div class="sub">
-      <h3>Here’s a small selection of what I’ve been working on.</h3>
-      <a class="btn" href="projects.html">See more projects</a>
-      <span></span>
-    </div>
-    <div class="cards">
-      <article class="card">
-        <a href="https://marin1234.itch.io/into-the-fishknown"><img src="images/Showcase1.png" alt="Into the Fishknown"></a>
-        <h3>Into the Fishknown</h3>
-        <p class="tech">Unreal Engine</p>
-        <p class="desc">A game jam project made during 1 week-end for the Global Game Jam 2026.</p>
-      </article>
-      <article class="card">
-        <a href="https://github.com/JoaBories/KiliEngine2"><img src="images/Showcase2.png" alt="KiliEngine"></a>
-        <h3><a href="https://github.com/JoaBories/KiliEngine2">KiliEngine</a></h3>
-        <p class="tech">C++ / OpenGl</p>
-        <p class="desc">My game engine used to experiment and learn about engine architecture and graphic rendering.</p>
-      </article>
-      <article class="card">
-        <a href="https://artfx-school.itch.io/space-harriet"><img src="images/Showcase3.png" alt="Space Harriet"></a>
-        <h3><a href="https://artfx-school.itch.io/space-harriet">Space Harriet</a></h3>
-        <p class="tech">Unreal Engine</p>
-        <p class="desc">A group project made during 1 month, the goal was to remake the old Space Harrier in 3D.</p>
-      </article>
-    </div>
-  </section>
+    <section>
+      <div class="section-band"><h2>My projects</h2></div>
+      <div class="projects-intro">
+        <h3>Here’s a small selection of what I’ve been working on.</h3>
+        <a class="btn" href="projects.html">See more projects</a>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <a href="https://marin1234.itch.io/into-the-fishknown"><img src="images/Showcase1.png" alt="Into the Fishknown"></a>
+          <h3><a href="https://marin1234.itch.io/into-the-fishknown">Into the Fishknown</a></h3>
+          <p class="card-tech">Unreal Engine</p>
+          <p class="card-desc">A game jam project made over one weekend for the Global Game Jam 2026.</p>
+        </article>
+        <article class="card">
+          <a href="https://github.com/JoaBories/KiliEngine2"><img src="images/Showcase2.png" alt="KiliEngine II"></a>
+          <h3><a href="https://github.com/JoaBories/KiliEngine2">KiliEngine II</a></h3>
+          <p class="card-tech">C++ / OpenGL</p>
+          <p class="card-desc">My game engine used to experiment and learn about engine architecture and graphic rendering.</p>
+        </article>
+        <article class="card">
+          <a href="https://artfx-school.itch.io/space-harriet"><img src="images/Showcase3.png" alt="Space Harriet"></a>
+          <h3><a href="https://artfx-school.itch.io/space-harriet">Space Harriet</a></h3>
+          <p class="card-tech">Unreal Engine</p>
+          <p class="card-desc">A group project made over one month. The goal was to remake the old Space Harrier in 3D.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div>
       <p><strong>Joa Bories</strong></p>
-      <p>You can contact me by mail: <a href="mailto:joa.bories@artfx.fr">joa.bories@artfx.fr</a> or on Linkedin: <a href="https://www.linkedin.com/in/joa-bories/">linkedin.com/in/joa-bories</a>.<br>
-      You can also see my Github: <a href="https://github.com/JoaBories">github.com/JoaBories</a>.</p>
+      <p>
+        You can contact me by email: <a href="mailto:joa.bories@artfx.fr">joa.bories@artfx.fr</a> or on LinkedIn: <a href="https://www.linkedin.com/in/joa-bories/">linkedin.com/in/joa-bories</a>.<br>
+        You can also check out my GitHub: <a href="https://github.com/JoaBories">github.com/JoaBories</a>.
+      </p>
     </div>
   </footer>
 
-  <script>
-    var h = document.getElementById("top");
-    var hero = document.querySelector(".hero");
-    function onScroll() {
-      var y = window.scrollY;
-      h.classList.toggle("solid", y > 40);
-      if (y < window.innerHeight) hero.style.setProperty("--p", (y * 0.5) + "px");
-    }
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-  </script>
 </body>
 </html>
